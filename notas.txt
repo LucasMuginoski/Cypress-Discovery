@@ -1,0 +1,26 @@
+Commom comands for cypress
+    -.click(), .type(), .clear(), .check(), .select(), .trigger() 
+    
+    // before(function(){
+    //     //antes de todos os tests cases
+    //     cy.log('Tudo aqui é executado uma única vez ANTES de TODOS os casos de testes.');
+    // })
+
+    // beforeEach(function(){
+    //     //antes de cada um - também existe o afterEach
+    //     cy.log('Tudo aqui é executado sempre ANTES de cada caso de teste');
+    // })
+
+    // after(function(){
+    //     //depois de todos os tests cases
+    //     cy.log('Tudo aqui é executado uma única vez DEPOIS de TODOS os casos de testes.');
+    // })
+
+
+NPX CYPRESS RUN
+Execução em headless é a execução "válida pelo framework", assim gerando vídeo para cada arquivo teste.spec.js e
+se houver falhas ocorre o screenshot no momento. A cada nova rodada o framework exclui os dados historicos de
+testes para armazenar os novos.
+O histórico de execução poder ser armazenado na ferramenta de continuou integration 
+
+npx cypress run -b "nome Do browser" => o navegador precisa estar instalado na maquina.
