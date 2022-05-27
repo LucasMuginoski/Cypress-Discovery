@@ -4,12 +4,15 @@ on: push
 
 jobs:
   cypress:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-    
-      - name: Install packages
-      - run: npm i
-      - run: npm start &
-      - run: npm naosei
+      - name: setup
+        uses: actions/checkout@v2
+
+      - name: setup
+        run: yarn
+      - name: setup
+        run: yarn start &
+      - name: setup
+        run: yarn naosei
