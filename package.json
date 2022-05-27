@@ -4,7 +4,8 @@
   "description": "projetos de aceite do app Buger-eats",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "test": "npx cypress open",
+    "naosei": "npx cypress run"
   },
   "author": "Lucas Muginoski",
   "license": "MIT",
